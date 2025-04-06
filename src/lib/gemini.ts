@@ -54,7 +54,7 @@ export const summarizeCode = async(doc: Document) => {
     try {
         const code = doc.pageContent.slice(0, 10000)
         const response = await model.generateContent([
-            `You are an intelligent senior softwaren engineer who specialises in onboarding junior software engineers onto projects. \n
+            `You are an intelligent senior software engineer who specializes in onboarding junior software engineers onto projects. \n
             You are onboarding a junior software engineer onto a project and explaining to them the purpose of the ${doc.metadata.source} file. \n
             Here is the code:
             ---
